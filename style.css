@@ -1,0 +1,44 @@
+.code {
+  font-family: 'Fira Code', monospace;
+}
+
+.ident {
+  color: blue;
+}
+
+.keyword {
+  color: orangered;
+}
+
+.hint {
+  font-size: smaller;
+  color:gray;
+  line-height: 0.5em;
+}
+
+span {
+  position: relative;
+  display: inline-block;
+  /*border-bottom: 1px dotted black;*/ /* If you want dots under the hoverable text */
+}
+
+/* Tooltip text */
+span .tooltip {
+  font-size: smaller;
+  visibility: hidden;
+  background-color: grey;
+  color: white;
+  text-align: center;
+  padding: 0;
+  border-radius: 2px;
+  position:absolute;
+  bottom: 100%;
+  left: 50%;
+  margin-left: calc(0px - 100% / 2);
+  z-index: 1;
+}
+
+/* Show the tooltip text when you mouse over the tooltip container */
+span:hover .tooltip {
+  visibility: visible;
+}
