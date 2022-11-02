@@ -1,4 +1,0 @@
-(executable
- (public_name source_viewer_example)
- (name main)
- (libraries source_viewer_example))
